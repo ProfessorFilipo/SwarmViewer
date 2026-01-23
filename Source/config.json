@@ -1,0 +1,137 @@
+{
+    "simulacao": {
+        "passo_tempo_global": 0.2,
+        "duracao_maxima": 2000
+    },
+    "ambiente": {
+        "limite_ceu": 60,
+        "limite_solo": 60
+    },
+    "obstaculos": [
+        {
+            "id": "torre_central",
+            "posicao": [
+                0,
+                0,
+                0
+            ],
+            "dimensoes": {
+                "altura": 15,
+                "raio": 2
+            },
+            "colisional": true,
+            "transparencia": 40
+        }
+    ],
+    "drones": [
+        {
+            "id": "drone_1",
+            "tipo_trajetoria": "orbital",
+            "cor_rgb": [
+                1,
+                0,
+                0
+            ],
+            "posicao_inicial": [
+                5,
+                5,
+                0
+            ],
+            "posicao_final": [
+                0,
+                0,
+                0
+            ],
+            "area_seguranca": 1.5,
+            "raio_orbita": 5.0,
+            "velocidade_orbital": 1.0
+        },
+        {
+            "id": "drone_2",
+            "tipo_trajetoria": "orbital",
+            "cor_rgb": [
+                0,
+                0,
+                1
+            ],
+            "posicao_inicial": [
+                -5,
+                5,
+                0
+            ],
+            "posicao_final": [
+                0,
+                0,
+                0
+            ],
+            "area_seguranca": 1.5,
+            "raio_orbita": 5.0,
+            "velocidade_orbital": -1.0
+        },
+        {
+            "id": "kamikaze_1",
+            "tipo_trajetoria": "linear",
+            "cor_rgb": [
+                0,
+                0,
+                1
+            ],
+            "posicao_inicial": [
+                -5,
+                5,
+                0
+            ],
+            "posicao_final": [
+                15,
+                5,
+                0
+            ],
+            "area_seguranca": 1.5,
+            "raio_orbita": 5.0,
+            "velocidade_orbital": -3.0
+        },
+        {
+            "id": "kamikaze_2",
+            "tipo_trajetoria": "linear",
+            "cor_rgb": [
+                0,
+                1,
+                0
+            ],
+            "posicao_inicial": [
+                15,
+                5,
+                0
+            ],
+            "posicao_final": [
+                -5,
+                5,
+                0
+            ],
+            "area_seguranca": 1.5,
+            "raio_orbita": 5.0,
+            "velocidade_orbital": -3.0
+        },
+        {
+            "id": "kamikaze_3",
+            "tipo_trajetoria": "linear",
+            "cor_rgb": [35, 1, 0 ],
+            "posicao_inicial": [-15, 5, -10 ],
+            "posicao_final": [30, 5, -25 ],
+            "area_seguranca": 1.5,
+            "raio_orbita": 5.0,
+            "velocidade_orbital": -2.0
+        },
+        {
+            "id": "kamikaze_4",
+            "tipo_trajetoria": "linear",
+            "cor_rgb": [0, 1, 35 ],
+            "posicao_inicial": [30, 5, -25 ],
+            "posicao_final": [-15, 5, -10  ],
+            "area_seguranca": 1.5,
+            "raio_orbita": 5.0,
+            "velocidade_orbital": -2.0
+        }
+
+    ]
+}
